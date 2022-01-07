@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="styles.css">
+            <title>Playstation Store</title>
+        </head>
+        <body>
+            <div class="container">
+                <div class="navbar">
+                    <a href="/Playtation Store/index.html"> <img src="./img/logo.png" class="logo" alt="logo"></a>
+                    <nav>
+                        <ul id="menuLi">
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/Console/console.html">Console</a></li>
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/Controller/controller.html">Controller</a></li>
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/accessories/accessories.html">Accessories</a></li>
+                        </ul>
+                    </nav>
+                    <img src="./img/menu.png" alt="Botão Menu" class="menuIcon" onclick="showMenu()"/>
+                </div>
+
+                <div class="row">
+                    <div class="coloumn1">
+                        <h2>PS5<br>Console</h2>
+                        <h3>The New Console For 9º Geration</h3>
+                        <p>Console original</p>
+                        <h4>R$ 5000,00</h4>
+                        <button class="buy">Byu Now<img src="./img/arrow.png" alt="seta"><button>
+                    </div>
+                    <div class="coloumn2">
+                        <img class="console" src="./img/console.png" alt="console">
+                        <div class="colorBox"></div>
+                        <button class="addCart">
+                            <img src="./img/add.png" alt="adicionarAoCarrinho">
+                        </button>
+                    </div>
+                </div>
+            
+            <div class="socialLinks">
+                <img src="./img/fb.png">
+                <img src="./img/ig.png">
+                <img src="./img/tw.png">
+            </div>
+            </div>
+            
+            </div>
+
+    
+        </body>
+
+        <script>
+            const menuItem = document.getElementById("menuLi")
+            menuItem.style.maxHeight = "0px"
+
+            function showMenu() {
+                if(menuItem.style.maxHeight == "0px") {
+                    menuItem.style.maxHeight = "120px"
+                } else {
+                    menuItem.style.maxHeight = "0px"
+                }
+            }
+
+
+        </script>
+</html>

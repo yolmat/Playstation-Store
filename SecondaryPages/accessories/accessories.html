@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="styles.css">
+            <title>Playstation Store Accessories</title>
+        </head>
+        <body>
+            <div class="container">
+                <div class="navbar">
+                    <a href="/Playtation Store/index.html"> <img src="./img/logo.png" class="logo" alt="logo"></a>
+                    <nav>
+                        <ul id="menuList">
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/Console/console.html">Console</a></li>
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/Controller/controller.html">Controller</a></li>
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/accessories/accessories.html">Accessories</a></li>
+                        </ul>
+                    </nav>
+                    <img alt="Button menu" src="./img/menu.png" onclick="showMenu()" class="menuIcon"/>
+                </div>
+
+                <div class="row">
+                    <div class="coloumn1">
+                        <h2>PS5<br>Accessories</h2>
+                        <h3>The News Accessories for Playstation</h3>
+                        <p>Accessories Original</p>
+                        <h4>R$ 800,00</h4>
+                        <button class="buy">Buy Now<img src="./img/arrow.png" alt="seta"></button>
+                    </div>
+                    <div class="coloumn2">
+                        <img class="accessories" src="./img/accessories.png" alt="accessories">
+                        <div class="colorBox"></div>
+                        <button class="addCart">
+                            <img src="./img/add.png" alt="Add to the car">
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="socialLinks">
+                    <img src="./img/fb.png">
+                    <img src="./img/ig.png">
+                    <img src="./img/tw.png">
+                </div>
+            </div>
+        </div>
+        </body>
+        <script>
+            const menuList = document.getElementById("menuList")
+            menuList.style.maxHeight = "0px"
+
+            function showMenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "120px"
+                } else {
+                    menuList.style.maxHeight = "0px"
+                    }
+                }
+        </script>
+    </html>

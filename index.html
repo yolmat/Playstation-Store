@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="styles.css"/>
+            <title>Home Page Playstation Store</title>
+        </head>
+        <body>
+            <div class="container">
+                <div class="navBar">
+                    <a href="/Playtation Store/index.html"> <img src="./img/logo.png" class="logo" alt="logo"></a>
+                    <nav>
+                        <ul id="menuLi">
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/Console/console.html">Console</a></li>
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/Controller/controller.html">Controller</a></li>
+                            <li class="navLi"><a class="navLink" href="/Playtation Store/SecondaryPages/accessories/accessories.html">Accessories</a></li>
+                        </ul>
+                    </nav>
+                    <img src="./img/menu.png" alt="Botão Menu" class="menuIcon" onclick="showMenu()"/>
+                </div>
+                <div class="center">
+                    <h1>Welcome</h1>
+                    <h2>Playtation Store</h2>
+                </div>
+                <div class="row">
+                    <div class="box1"><a href="/Playtation Store/SecondaryPages/accessories/accessories.html"> <img src="./img/Acessorios.png" alt="product Image"></a>
+                        <h1><a href="/Playtation Store/SecondaryPages/accessories/accessories.html">Playstation Acessories</a></h1>
+                        <h2>The best accessories<br>for your play</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="box2"><a href="/Playtation Store/SecondaryPages/Console/console.html"><img src="./img/console.png" alt="product Image"></a>
+                        <h1><a href="/Playtation Store/SecondaryPages/Console/console.html">Playstation Console</a></h1>
+                        <h2>The next geration that<br>will surprise you</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="box3"><a href="/Playtation Store/SecondaryPages/Controller/controller.html"><img src="./img/controller.png" alt="product Image"></a>
+                        <h1><a href="/Playtation Store/SecondaryPages/Controller/controller.html">Playstation Controller</a></h1>
+                        <h2>The magic controller<br>for you play</h2>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="socialLinks">
+                    <img src="./img/fb.png">
+                    <img src="./img/ig.png">
+                    <img src="./img/tw.png">
+                </div>
+            </div>
+        </body>
+
+        <script>
+            const menuItem = document.getElementById("menuLi")
+            menuItem.style.maxHeight = "0px"
+
+            function showMenu() {
+                if(menuItem.style.maxHeight == "0px") {
+                    menuItem.style.maxHeight = "120px"
+                } else { 
+                    menuItem.style.maxHeight = "0px"
+                }
+            }
+
+        </script>
+
+    </html>
